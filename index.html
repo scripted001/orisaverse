@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farms | Orisaverse</title>
+    <link rel="stylesheet" href="programFiles/themes/style.css">
+    <link rel="stylesheet" href="programFiles/themes/animations.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css" integrity="sha512-SomeHashHere" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader"></div>
+
+    <section id="wrapper">
+        <!-- navigation area -->
+        <section id="navigation-area">
+            <div class="nav-logo">
+                <img src="programFiles/images/logos/Orisaverse-Logo.png" alt="Orisaverse Logo">
+                <button class="mobile-nav-btn"></button>
+            </div>
+            <div class="nav-left">
+                <ul>
+                    <li class="glow-hover">Hi, Henry</li>
+                    <li class="glow-hover">Help</li>
+                    <li class="glow-hover">Bag</li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <span id="search-bar">
+                    <form action="#" method="POST">
+                        <input type="text" name="search" placeholder="Search">
+                    </form>
+                </span>
+                <span id="icon-bar">
+                    <div id="menu">
+                        <button id="exp" class="glow-hover">Explore</button>
+                        <button id="cat" class="glow-hover">Categories</button> 
+                    </div>
+                    <div id="noti" class="glow-hover"></div>
+                    <div id="profile" class="glow-hover"></div>
+                </span>
+            </div>
+        </section>
+
+        <!-- main section -->
+        <section id="main">
+            <section class="main-left"></section>
+
+            <section class="main-mid">
+                <div class="postcard fade-in">
+                    <div class="video-container">
+                        <video class="postVideo" src="programFiles/uploads/7.mp4" muted loop></video>
+                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+                <div class="postcard fade-in">
+                    <div class="video-container">
+                        <video class="postVideo" src="programFiles/uploads/2.mp4" muted loop></video>
+                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+                <div class="postcard fade-in">
+                    <div class="video-container">
+                        <video class="postVideo" src="programFiles/uploads/6.mp4" muted loop></video>
+                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+                <div class="postcard fade-in">
+                    <div class="video-container">
+                        <video class="postVideo" src="programFiles/uploads/7.mp4" muted loop></video>
+                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-right"></section>
+        </section>
+    </section>
+
+    <!-- JS Modules -->
+    <script src="programFiles/js/loader.js"></script>
+    <script src="programFiles/js/navbar.js"></script>
+    <script src="programFiles/js/search.js"></script>
+    <script src="programFiles/js/videoControl.js"></script>
+    <script src="programFiles/js/postAnimations.js"></script>
+    <script src="programFiles/js/themeToggle.js"></script>
+    <script src="programFiles/js/mobileMenu.js"></script>
+    <script src="programFiles/js/postScroll.js"></script>
+    <script src="programFiles/js/postcard.js"></script>
+    <script src="programFiles/plugins/postcardScroll.js"></script>
+    <script src="programFiles/plugins/postcardSwipe.js"></script>
+
+
+</body>
+</html>
