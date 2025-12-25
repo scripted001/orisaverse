@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* desktop view */
+@media screen and (min-width: 500px) {
+    body {
+        background-image: url('../images/bg/1598247.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+    }
+    #navigation-area {
+        width: 98%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        position: fixed;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        z-index: 1;
+    }
+    
+#wrapper {
+    width: 98vw;
+    height: 96vh;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #d3d3d351;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+.nav-logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.nav-logo img {
+    width: 140px;
+    height: auto;
+}
+.nav-logo button {
+    display: none;
+}
+.nav-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+
+}
+.nav-left ul {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-left ul li {
+    color: #000;
+    cursor: pointer;
+    
+}
+.nav-left ul li:hover {
+    color: #a9cf38;
+}
+.nav-right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right span {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.nav-right span form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right span form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 40px;
+}
+#menu {
+   width: 30%;
+   height: 40%;
+   background-color: #a9cf38;
+   margin-left: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #000;
+}
+#noti {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+#profile {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#cat {
+    display: none;
+}
+#exp {
+    background-color: transparent;
+    border: transparent;
+    padding: 5px;
+}
+
+/* main section begins */
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.main-left {
+    width: 32.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.main-right {
+    width: 32.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.main-mid {
+    width: 35%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: transparent;
+    scrollbar-width: none;
+}
+.postcard {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: red;
+    border-radius: 10px;
+
+}
+
+/* Video container fills the card */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full video coverage */
+  border-radius: 10px;
+}
+/* Volume bar overlay */
+.volumeControl {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 120px;
+  height: 5px;
+  accent-color: #E29518; /* glowing gold tone */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.volumeControl:hover {
+  opacity: 1;
+}
+/* Fullscreen postcards and scroll snapping */
+.main-mid {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; /* Ensure viewport height */
+}
+
+.postcard {
+    scroll-snap-align: start;
+    height: 100vh; /* Full screen per card */
+    transition: opacity 2s ease, transform 2s ease;
+    opacity: 0; /* Start hidden for fade-in */
+}
+
+/* Fade-in animation */
+.postcard.fade-in {
+    opacity: 1;
+}
+
+}
+/* mobile view */
+@media screen and (max-width: 499px) {
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+}
+#navigation-area {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffa2;
+    position: fixed;
+    z-index: 1;
+}
+.nav-logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.nav-logo img {
+   display: none;
+}
+.nav-left {
+    display: none;
+}
+.nav-right {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+#search-bar {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.nav-right span form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right span form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eae7e7;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 40px;
+}
+#icon-bar {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#noti {
+    display: none;
+}
+#profile {
+    display: none;
+}
+#menu {
+    color: #000;
+
+}
+#exp {
+    display: none;
+}
+#cat {
+    background-color: transparent;
+    border: none;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.main-left {
+    display: none;
+}
+.main-right {
+    display: none;
+}
+.main-mid {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: transparent;
+}
+.postcard {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+   
+    
+}
+/* Video container fills the card */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full video coverage */
+  border-radius: 10px;
+}
+
+/* Volume bar overlay */
+.volumeControl {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 120px;
+  height: 5px;
+  accent-color: #E29518; /* glowing gold tone */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.volumeControl:hover {
+  opacity: 1;
+}
+/* Fullscreen postcards and scroll snapping */
+.main-mid {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; /* Ensure viewport height */
+     -webkit-overflow-scrolling: touch; /* smooth momentum on iOS */
+}
+
+.postcard {
+    scroll-snap-align: start;
+    height: 100vh; /* Full screen per card */
+    transition: opacity 2s ease, transform 2s ease;
+    opacity: 0; /* Start hidden for fade-in */
+}
+
+/* Fade-in animation */
+.postcard.fade-in {
+    opacity: 1;
+}
+
+}
