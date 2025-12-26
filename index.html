@@ -46,53 +46,92 @@
         </section>
 
         <!-- main section -->
-        <section id="main">
-            <section class="main-left"></section>
+       <section id="main">
+    <section class="main-left"></section>
+<section class="main-mid">
+  <div class="postcard">
+    <!-- Video block -->
+    <div class="video-container">
+      <video class="postVideo" src="programFiles/uploads/7.mp4" loop playsinline></video>
+    </div>
 
-            <section class="main-mid">
-                <div class="postcard fade-in">
-                    <div class="video-container">
-                        <video class="postVideo" src="programFiles/uploads/7.mp4" muted loop></video>
-                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
-                    </div>
-                </div>
-                <div class="postcard fade-in">
-                    <div class="video-container">
-                        <video class="postVideo" src="programFiles/uploads/2.mp4" muted loop></video>
-                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
-                    </div>
-                </div>
-                <div class="postcard fade-in">
-                    <div class="video-container">
-                        <video class="postVideo" src="programFiles/uploads/6.mp4" muted loop></video>
-                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
-                    </div>
-                </div>
-                <div class="postcard fade-in">
-                    <div class="video-container">
-                        <video class="postVideo" src="programFiles/uploads/7.mp4" muted loop></video>
-                        <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
-                    </div>
-                </div>
-            </section>
+    <!-- Overlay / UI block -->
+    <div class="overlay">
+      <input type="range" class="brightnessControl" min="0.5" max="1.5" step="0.05" value="1">
+      <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
 
-            <section class="main-right"></section>
-        </section>
+      <!-- Example buttons -->
+      <div class="buttons">
+        <button class="like">❤️</button>
+        <button class="comment">💬</button>
+        <button class="cart">🛒</button>
+      </div>
+
+      <!-- Example info -->
+      <div class="info">
+        <p>Product description here</p>
+        <p>$99</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="postcard">
+    <div class="video-container">
+      <video class="postVideo" src="programFiles/uploads/2.mp4" loop playsinline></video>
+    </div>
+    <div class="overlay">
+      <input type="range" class="brightnessControl" min="0.5" max="1.5" step="0.05" value="1">
+      <input type="range" class="volumeControl" min="0" max="1" step="0.01" value="0.5">
+      <div class="buttons">
+        <button class="like">❤️</button>
+        <button class="comment">💬</button>
+        <button class="cart">🛒</button>
+      </div>
+      <div class="info">
+        <p>Product description here</p>
+        <p>$49</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more postcards as needed -->
+</section>
+
+
+
+
+
+    <section class="main-right"></section>
+</section>
+
     </section>
 
     <!-- JS Modules -->
-    <script src="programFiles/js/loader.js"></script>
-    <script src="programFiles/js/navbar.js"></script>
-    <script src="programFiles/js/search.js"></script>
-    <script src="programFiles/js/videoControl.js"></script>
-    <script src="programFiles/js/postAnimations.js"></script>
-    <script src="programFiles/js/themeToggle.js"></script>
-    <script src="programFiles/js/mobileMenu.js"></script>
-    <script src="programFiles/js/postScroll.js"></script>
-    <script src="programFiles/js/postcard.js"></script>
+    <script src="programFiles/plugins/loader.js"></script>
+    <script src="programFiles/plugins/navbar.js"></script>
+    <script src="programFiles/plugins/search.js"></script>
+    <script src="programFiles/plugins/video.js"></script>
+    <script src="programFiles/plugins/videoControl.js"></script>
+    <script src="programFiles/plugins/postAnimations.js"></script>
+    <script src="programFiles/plugins/themeToggle.js"></script>
+    <script src="programFiles/plugins/mobileMenu.js"></script>
+    <script src="programFiles/plugins/postScroll.js"></script>
+    <script src="programFiles/plugins/postcard.js"></script>
     <script src="programFiles/plugins/postcardScroll.js"></script>
     <script src="programFiles/plugins/postcardSwipe.js"></script>
 
 
 </body>
 </html>
+
+
+<!-- This is what I say I want: I want that each video plays 
+ automatically when it's fullon 
+ screen, and on refresh, it waits for 
+ play click to start playing. Then also 
+ a video volume bar on the right, then 
+ a screen brightness control effect bar 
+ on the left. mind you the video can be 
+ paused at anytime.. I want you to do 
+ something like tiktok, but alot much 
+ more advanced... -->
