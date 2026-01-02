@@ -461,6 +461,7 @@
   appearance: none;
   background: transparent;
   cursor: pointer;
+    display: none;
 }
 
 .volumeControl:hover,
@@ -507,3 +508,4 @@
 }
 
 }
+
