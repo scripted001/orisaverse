@@ -10,7 +10,7 @@
 /* desktop view */
 @media screen and (min-width: 500px) {
     body {
-        background-image: url('https://scripted001.github.io/orisaverse/images/bg/home.jpg');
+        background-image: url('https://scripted001.github.io/orisaverse/programFiles/images/bg/home.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -508,5 +508,6 @@
 }
 
 }
+
 
 
