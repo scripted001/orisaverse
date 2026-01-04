@@ -72,8 +72,27 @@
       </div>
       <!-- Example info -->
       <div class="info">
-        <p>Product description here</p>
-        <p>$99</p>
+        <div class="info-left">
+          <div class="left-price-bar">
+            <h4>&#8358;2,000</h4>
+          </div>
+          <div class="left-product-name-bar">
+            <h3>Cassava Plant</h3>
+          </div>
+          <div class="left-farm-page-name-bar">
+            <form action="farm-page.html">
+              <input type="hidden" name="postid" value="posterid">
+              <button>Henry Farms</button>
+            </form>
+          </div>
+        </div>
+        <div class="info-right">
+          <form action="cart-page.html" method="POST">
+            <input type="hidden" name="productid" value="productid">
+            <input type="hidden" name="postid" value="posterid">
+            <button><i class="fa-solid fa-bag-shopping"></i></button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
