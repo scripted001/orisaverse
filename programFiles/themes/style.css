@@ -534,7 +534,7 @@
   background-color: #ffffffea;
   color: #000;
   justify-self: center;
-  bottom: 50px;
+  bottom: 65px;
   border-radius: 10px;
   box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.272);
 
@@ -562,7 +562,7 @@
   height: 30px;
   border-radius: 50%;
   border: none;
-  right: 190px;
+  right: 150px;
   background-color: rgb(4, 172, 4);
   color: #fff;
   overflow: hidden;
