@@ -3,6 +3,7 @@
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -400,7 +401,7 @@
     display: none;
 }
 #cat {
-    background-color: #000;
+    background-color: rgb(4, 172, 4);
     border: none;
     padding: 10px;
     color: #fff;
@@ -530,7 +531,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #ffffffea;
   color: #000;
   justify-self: center;
   bottom: 50px;
@@ -538,8 +539,79 @@
   box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.272);
 
 }
+.info-left {
+  width: 70%;
+  height: 100%;
+  display: block;
+  background-color: transparent;
+  padding-left: 20px;
+  
+}
+.left-price-bar {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: last baseline;
+  background-color: transparent;
+  color: rgb(4, 172, 4);
+}
+.left-product-name-bar {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  color: #000;
+  overflow: hidden;
+}
+.left-farm-page-name-bar {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: first baseline;
+  background-color: transparent;
+  color: #000;
+}
+.left-farm-page-name-bar form button {
+  background-color: transparent;
+  border: none;
+} 
+.info-right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.info-right form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 
 }
-
-
+.info-right form button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(4, 172, 4);
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 15px 6px rgba(32, 87, 0, 0.272);
+  
+}
+.info-right form button i {
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+}
 
